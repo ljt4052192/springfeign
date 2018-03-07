@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: springfeign
+  cloud:
+    config:
+      label: master
+      profile: springfeign-demo.yml
+      uri: http://localhost:8004/
+server:
+  port: ${port:8003}
